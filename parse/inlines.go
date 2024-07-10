@@ -88,7 +88,7 @@ func (t *Tree) walkParseInline(node *ast.Node) {
 		t.mergeText(node)
 
 		if t.Context.ParseOption.GFMAutoLink && !t.Context.ParseOption.VditorWYSIWYG && !t.Context.ParseOption.VditorIR && !t.Context.ParseOption.VditorSV && !t.Context.ParseOption.ProtyleWYSIWYG {
-			t.parseGFMAutoEmailLink(node)
+			// t.parseGFMAutoEmailLink(node)
 			t.parseGFMAutoLink(node)
 		}
 
